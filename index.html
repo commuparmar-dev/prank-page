@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>System Scan</title>
+<style>
+body{
+    margin:0;
+    background:black;
+    color:#00ff00;
+    font-family:monospace;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+}
+h1{
+    font-size:30px;
+}
+#text{
+    font-size:22px;
+}
+</style>
+</head>
+<body>
+
+<div>
+    <h1>⚠ SYSTEM SCAN ⚠</h1>
+    <p id="text">Scanning Device...</p>
+</div>
+
+<script>
+const msgs=[
+"Accessing Photos...",
+"Checking WhatsApp...",
+"Reading Contacts...",
+"Uploading Memes...",
+"Just Kidding 😂",
+"Nothing was hacked!"
+];
+
+let i=0;
+
+setInterval(()=>{
+if(i<msgs.length){
+document.getElementById("text").innerHTML=msgs[i];
+i++;
+}
+},1500);
+</script>
+
+</body>
+</html>
